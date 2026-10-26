@@ -7,5 +7,5 @@ window.PORTFOLIO_CONFIG = {
   email: "mibbsc0311@icloud.com",
   linkedin: "https://www.linkedin.com/in/charles-mibbs",
   credly: "https://www.credly.com/users/charles-mibbs",
-  notion: "https://app.notion.com/p/40583fe558a58124ac13cea0eb8c89b5"
+  notion: "https://gabby-guppy-36a.notion.site/PORTFOLIO-Professional-Work-405cf3881a8681aab0b5eea245c49398"
 };
