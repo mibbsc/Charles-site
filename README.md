@@ -1,30 +1,43 @@
-# Charles Mibbs — Personal Engineering Portfolio
+# Charles Mibbs — Cloud & Network Engineering Website
 
-Responsive static website for a Cloud and Network Engineering student. Hosted at https://www.charlesmibbs.net/ using the `Charles-site` GitHub repository.
+The source code for **[www.charlesmibbs.net](https://www.charlesmibbs.net/)**. A responsive, static personal website documenting a developing cloud and network engineering career.
 
-## Current content
-- `index.html` — introduction, contact channels and earned certifications
-- `about.html` — background, education and current goals
-- `resume.html` — professional experience, education, and ITIL 4 Foundation / LPI Linux Essentials
-- `portfolio.html` — one flagship project, **Hybrid AWS Home Network**, labeled **Architecture & Planning**, plus its five planned case-study phases
-- `styles.css` — responsive visual styling
-- `script.js` — menu and shared links
-- `config.js` — contact/profile links and a Notion URL reserved for the new portfolio
+## Featured project · Hybrid AWS Home Network
+**Status: architecture and planning.** The project proposes an expandable 24-port Cat6 home network, a dedicated Proxmox/Linux virtualization server, and selective, cost-controlled AWS integrations. Deployment and testing have **not** yet been completed.
 
-## Notion portfolio
-New workspace-level Notion portfolio (currently a **private draft**):
-https://app.notion.com/p/40583fe558a58124ac13cea0eb8c89b5
+Five planned engineering case studies:
+1. Physical LAN and Proxmox virtualization
+2. Encrypted offsite backup and recovery
+3. AWS VPC architecture
+4. Secure hybrid connectivity
+5. Terraform infrastructure as code
 
-Featured technical case study:
-https://app.notion.com/p/40583fe558a581458d28fc81142028d1
+## Professional portfolio and documentation
 
-The public website currently contains **no direct Notion buttons or links**. Do not add public Notion links until the new pages have been explicitly published and tested in an incognito browser.
+- **[Live website](https://www.charlesmibbs.net/)**
+- **[Website projects page](https://www.charlesmibbs.net/portfolio.html)**
+- **[Public Notion engineering portfolio](https://gabby-guppy-36a.notion.site/PORTFOLIO-Professional-Work-405cf3881a8681aab0b5eea245c49398)**
+- **[Earned credentials on Credly](https://www.credly.com/users/charles-mibbs)**
 
-## Editorial rules
-- Only claim tested deployments, measured outcomes, and certifications that are actually complete.
-- Keep the five roadmap items marked planned until implementation is verified.
-- Never expose secrets, internal host mapping, private household details, or third-party data.
-- Use the project's Notion engineering journal as the working source of truth; publish only sanitized, reviewed case studies.
+The public Notion portfolio contains five linked case-study pages with project goals and planned tests. Private operations materials, infrastructure inventories, task management, and maintenance records are not intended for publication.
 
-## Site deployment
-Static HTML/CSS/JS, using the repository's existing GitHub Pages/domain configuration. Review changes before publishing major site restructures.
+## Website files
+| Path | Purpose |
+| --- | --- |
+| `index.html` | Home, technical focus and earned certifications |
+| `portfolio.html` | Hybrid AWS flagship project and five-phase roadmap |
+| `resume.html` | Professional resume and certifications |
+| `about.html` | Background and career direction |
+| `styles.css` | Responsive dark design |
+| `script.js` | Site interactions and shared external links |
+| `config.js` | Current public contact/profile/Notion links |
+| `CNAME` | GitHub Pages custom domain |
+
+## Build and deploy
+No build step is required. The site uses HTML, CSS and JavaScript. Review changes locally, then push to the publishing branch configured in GitHub Pages.
+
+## Publication rules
+- Label proposed work as **planned** until it has been deployed and tested.
+- Document actual architectures, observed test results, failures and corrective actions.
+- Keep IAM keys, tokens, private IP maps and identifying home infrastructure details out of this public repository.
+- Never publish private Notion operations and maintenance pages.
