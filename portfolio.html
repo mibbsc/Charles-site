@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Projects and technical learning portfolio.">
+  <meta name="description" content="Hybrid AWS Home Network engineering project: physical LAN, Proxmox virtualization, AWS networking, recovery, and Terraform. Project currently in planning.">
   <title>Projects | Charles Mibbs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -11,18 +11,55 @@
 <body>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">CM<span>.</span></span><span class="brand-caption">PORTFOLIO / 2026</span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="resume.html">Resume</a><a class="active" href="portfolio.html">Projects</a><a class="nav-contact" data-email-link href="mailto:mibbsc0311@icloud.com">Let's talk <span>↗</span></a></nav></header>
-  <main class="page-wrap inner-page">
-    <div class="eyebrow"><span class="status-dot"></span> A WORK IN PROGRESS, BY DESIGN</div>
-    <h1 class="page-title">Proof of <span class="gradient-text">practice.</span></h1>
-    <p class="page-lede">A growing collection of labs, notes, and projects that show what I’m learning and how I approach problems.</p>
-    <div class="portfolio-toolbar"><span class="mono">SELECTED WORK / 001—004</span><a class="text-link" data-notion href="#" target="_blank" rel="noreferrer">Open full Notion workspace <span>↗</span></a></div>
-    <section class="project-grid">
-      <article class="project-card project-featured"><div class="project-visual terminal-visual"><div class="terminal-bar"><span></span><span></span><span></span><b>linux-notes.sh</b></div><div class="terminal-content"><p><span>$</span> pwd</p><p class="terminal-output">/home/student/projects</p><p><span>$</span> grep "learning" notes.txt</p><p class="terminal-output">practice → review → improve</p><p><span>$</span> <i class="cursor"></i></p></div><span class="visual-label">LINUX / CLI</span></div><div class="project-body"><div class="project-meta"><span>FOUNDATIONS</span><span>01</span></div><h2>Linux Essentials Lab Notes</h2><p>Command-line practice and study notes covering navigation, file inspection, searching, permissions, and basic troubleshooting. Replace this description with links to completed labs and evidence.</p><div class="tag-row"><span class="tag">Linux</span><span class="tag">CLI</span><span class="tag">Documentation</span></div><a class="project-link" data-notion href="#" target="_blank" rel="noreferrer">View in Notion <span>↗</span></a></div></article>
-      <article class="project-card"><div class="project-visual network-visual"><div class="network-node n1">HOST</div><div class="network-node n2">DNS</div><div class="network-node n3">IP</div><div class="network-node n4">ROUTER</div><svg viewBox="0 0 340 180" aria-hidden="true"><path d="M55 45 L170 45 L285 45 M170 45 L170 135 M55 45 L55 135 L170 135 L285 135 L285 45" /></svg><span class="visual-label">NETWORKING / LAB</span></div><div class="project-body"><div class="project-meta"><span>NETWORKING</span><span>02</span></div><h2>Networking on Linux</h2><p>A learning project for practicing interface inspection, connectivity checks, DNS lookups, and listening-port review. Add commands, outputs, and lessons learned as the lab grows.</p><div class="tag-row"><span class="tag">TCP/IP</span><span class="tag">DNS</span><span class="tag">Troubleshooting</span></div><a class="project-link" data-notion href="#" target="_blank" rel="noreferrer">View notes <span>↗</span></a></div></article>
-      <article class="project-card"><div class="project-visual cloud-visual"><div class="cloud-stack"><span>☁</span><b>AWS</b><small>REGION · VPC · COMPUTE</small></div><div class="cloud-ring"></div><span class="visual-label">CLOUD / AWS</span></div><div class="project-body"><div class="project-meta"><span>IN PROGRESS</span><span>03</span></div><h2>AWS Cloud Foundations</h2><p>Space for future AWS labs: architecture diagrams, IAM practice, networking, compute, storage, and cost-aware design. Publish only work you have actually completed.</p><div class="tag-row"><span class="tag">AWS</span><span class="tag">Cloud</span><span class="tag">Architecture</span></div><a class="project-link" data-notion href="#" target="_blank" rel="noreferrer">View notes <span>↗</span></a></div></article>
-      <article class="project-card project-add"><div class="add-symbol">＋</div><p class="mono">NEXT PROJECT</p><h2>Something you're building</h2><p>Every project starts with a question. Add your next lab, automation, diagram, or documented troubleshooting story here.</p><a class="text-link" data-email-link href="mailto:mibbsc0311@icloud.com">Discuss a project <span>↗</span></a></article>
+  <main class="page-wrap inner-page engineering-portfolio">
+    <div class="eyebrow"><span class="status-dot"></span> ENGINEERING PORTFOLIO / PROJECT 01</div>
+    <h1 class="page-title">Built with <span class="gradient-text">intention.</span></h1>
+    <p class="page-lede">An evidence-based record of my journey from network architecture to working hybrid cloud infrastructure. I'm starting with one substantial project and documenting each milestone as I reach it.</p>
+    <div class="portfolio-toolbar"><span class="mono">FEATURED PROJECT / 001</span><span class="project-stage"><span aria-hidden="true">●</span> ARCHITECTURE &amp; PLANNING</span></div>
+
+    <section class="hybrid-feature" id="project-overview" aria-labelledby="hybrid-title">
+      <div class="hybrid-visual" aria-hidden="true">
+        <div class="hybrid-grid-lines"></div>
+        <span class="hybrid-visual-kicker mono">SYSTEM DESIGN / CONCEPT</span>
+        <div class="hybrid-topology">
+          <div class="hybrid-node"><span class="hybrid-node-mark">⌁</span><strong>24-PORT LAN</strong><small>CAT6 · SWITCHING</small></div>
+          <span class="hybrid-connector"></span>
+          <div class="hybrid-node"><span class="hybrid-node-mark">▣</span><strong>PROXMOX</strong><small>LOCAL VIRTUALIZATION</small></div>
+          <span class="hybrid-connector"></span>
+          <div class="hybrid-node hybrid-node-cloud"><span class="hybrid-node-mark">☁</span><strong>AMAZON AWS</strong><small>VPC · EC2 · S3 · IAC</small></div>
+        </div>
+        <span class="hybrid-visual-index mono">FIG 01 — PROPOSED ARCHITECTURE</span>
+      </div>
+      <div class="hybrid-details">
+        <p class="mono section-label">ONE NETWORK · FIVE ENGINEERING CASE STUDIES</p>
+        <h2 id="hybrid-title">Hybrid AWS <span class="gradient-text">Home Network.</span></h2>
+        <p>I'm designing a 24-port structured home network and dedicated Proxmox virtualization server, with selective AWS integration for networking, backup, secure connectivity, and infrastructure automation.</p>
+        <p>The goal is to move beyond theory and develop repeatable experience in designing, deploying, securing, operating, and troubleshooting infrastructure.</p>
+        <div class="tag-row"><span class="tag">Networking</span><span class="tag">Linux</span><span class="tag">Proxmox</span><span class="tag">AWS</span><span class="tag">Terraform</span></div>
+        <p class="hybrid-disclosure"><strong>Current status:</strong> Architecture planning. The physical lab, AWS infrastructure, and validation tests have not yet been completed.</p>
+        <a class="button button-primary" href="#roadmap">View the project roadmap <span>↓</span></a>
+      </div>
     </section>
-</main>
+
+    <section class="roadmap-section" id="roadmap" aria-labelledby="roadmap-title">
+      <div class="section-heading"><div><p class="mono section-label">02 / PROJECT ROADMAP</p><h2 id="roadmap-title">Five milestones. <span class="gradient-text">Real evidence.</span></h2></div></div>
+      <p class="roadmap-lede">Each phase will become a separate, documented case study after its implementation is tested. All five are currently planned.</p>
+      <div class="phase-grid">
+        <article class="phase-card"><span class="mono phase-id">01 / NETWORKS</span><h3>Physical LAN &amp; Virtualization</h3><p>Cat6 structured cabling, switching, Proxmox server deployment, and VM connectivity checks.</p><span class="phase-state">PLANNED</span></article>
+        <article class="phase-card"><span class="mono phase-id">02 / RECOVERY</span><h3>Encrypted Backup &amp; Restore</h3><p>Cost-aware offsite backups, encryption, retention controls, and a demonstrated restoration test.</p><span class="phase-state">PLANNED</span></article>
+        <article class="phase-card"><span class="mono phase-id">03 / CLOUD</span><h3>AWS VPC Architecture</h3><p>Subnets, routing, security groups, temporary EC2 labs, and verified access boundaries.</p><span class="phase-state">PLANNED</span></article>
+        <article class="phase-card"><span class="mono phase-id">04 / CONNECTIVITY</span><h3>Secure Hybrid Networking</h3><p>Protected communication between on-premises systems and AWS with documented traffic tests.</p><span class="phase-state">PLANNED</span></article>
+        <article class="phase-card"><span class="mono phase-id">05 / AUTOMATION</span><h3>Terraform Infrastructure as Code</h3><p>Repeatable provisioning and teardown, version-controlled configuration, and validation.</p><span class="phase-state">PLANNED</span></article>
+      </div>
+    </section>
+
+    <section class="portfolio-outro" aria-label="Documentation standard">
+      <p class="mono section-label">DOCUMENTATION STANDARD</p>
+      <h2>Design. Implement. Test. <span class="gradient-text">Document.</span></h2>
+      <p>As each milestone is completed, I'll add the architecture, technical trade-offs, sanitized configurations, real test evidence, troubleshooting notes, and lessons learned. Planned work will never be presented as finished.</p>
+      <p class="portfolio-outro-footnote">A new Notion engineering portfolio is being prepared for public release. Full technical write-ups will be linked here when available.</p>
+    </section>
+  </main>
   <footer class="site-footer page-wrap"><a class="footer-brand" href="index.html">CM<span>.</span></a><span>Built with curiosity, consistency, and a terminal.</span><span class="mono">© <span data-year></span> CHARLES MIBBS</span></footer>
 </body>
 </html>
