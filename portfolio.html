@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hybrid AWS Home Network engineering project: physical LAN, Proxmox virtualization, AWS networking, recovery, and Terraform. Project currently in planning.">
+  <meta name="description" content="Cloud and network engineering portfolio: planned hybrid AWS infrastructure and a tested macOS Network Health Monitor.">
   <title>Projects | Charles Mibbs</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
   <main class="page-wrap inner-page engineering-portfolio">
     <div class="eyebrow"><span class="status-dot"></span> ENGINEERING PORTFOLIO / PROJECT 01</div>
     <h1 class="page-title">Built with <span class="gradient-text">intention.</span></h1>
-    <p class="page-lede">An evidence-based record of my journey from network architecture to working hybrid cloud infrastructure. I'm starting with one substantial project and documenting each milestone as I reach it.</p>
+    <p class="page-lede">An evidence-based record of my journey from network architecture to working hybrid cloud infrastructure. I'm documenting both planned infrastructure and implemented projects, with evidence from real tests.</p>
     <div class="portfolio-toolbar"><span class="mono">FEATURED PROJECT / 001</span><span class="project-stage"><span aria-hidden="true">●</span> ARCHITECTURE &amp; PLANNING</span></div>
 
     <section class="hybrid-feature" id="project-overview" aria-labelledby="hybrid-title">
@@ -55,11 +55,25 @@
       </div>
     </section>
 
+    <section class="roadmap-section" id="network-health-monitor" aria-labelledby="monitor-title">
+      <div class="section-heading"><div><p class="mono section-label">03 / IMPLEMENTED PROJECT</p><h2 id="monitor-title">Network Health <span class="gradient-text">Monitor.</span></h2></div></div>
+      <p class="roadmap-lede">I implemented and validated an AI-assisted macOS network monitoring utility that runs every 15 minutes, records timestamped diagnostics, and helps investigate intermittent connectivity issues.</p>
+      <div class="phase-grid">
+        <article class="phase-card"><span class="mono phase-id">01 / AUTOMATION</span><h3>Unattended monitoring</h3><p>Configured launchd to schedule Python diagnostics and preserve historical reports locally.</p><span class="phase-state">VERIFIED</span></article>
+        <article class="phase-card"><span class="mono phase-id">02 / TROUBLESHOOTING</span><h3>Connectivity validation</h3><p>Independently checked ICMP results, tested DNS and HTTPS, and verified that a controlled disconnect was logged without crashing.</p><span class="phase-state">TESTED</span></article>
+        <article class="phase-card"><span class="mono phase-id">03 / PERFORMANCE</span><h3>Two live networks</h3><p>Compared cellular hotspot and residential Wi-Fi samples: 65.919 ms versus 54.871 ms average latency, with 0% observed packet loss in both five-ping samples.</p><span class="phase-state">DOCUMENTED</span></article>
+      </div>
+      <div class="tag-row"><span class="tag">Python</span><span class="tag">macOS</span><span class="tag">ICMP</span><span class="tag">DNS</span><span class="tag">launchd</span><span class="tag">Git</span></div>
+      <p class="roadmap-lede">OpenAI generated the Python code. I implemented, debugged, deployed and tested the tool and independently interpreted initial diagnostics. The comparative analysis was AI-assisted. Samples are not a long-term performance baseline.</p>
+      <p><a class="button button-primary" href="https://github.com/mibbsc/network-health-monitor" target="_blank" rel="noopener noreferrer">View source and test results <span>↗</span></a></p>
+      <p><a class="project-link" href="https://app.notion.com/p/424cf3881a8681c99c29c8340ca18c00?pvs=204" target="_blank" rel="noopener noreferrer">Read the Notion case study <span>↗</span></a></p>
+    </section>
+
     <section class="portfolio-outro" aria-label="Documentation standard">
       <p class="mono section-label">DOCUMENTATION STANDARD</p>
       <h2>Design. Implement. Test. <span class="gradient-text">Document.</span></h2>
       <p>As each milestone is completed, I'll add the architecture, technical trade-offs, sanitized configurations, real test evidence, troubleshooting notes, and lessons learned. Planned work will never be presented as finished.</p>
-      <p class="portfolio-outro-footnote">The <a class="inline-link" data-notion href="https://gabby-guppy-36a.notion.site/PORTFOLIO-Professional-Work-405cf3881a8681aab0b5eea245c49398" target="_blank" rel="noopener noreferrer">Notion engineering portfolio ↗</a> contains our current architecture documentation and five planned case studies. Verified implementation results will be added as the project progresses.</p>
+      <p class="portfolio-outro-footnote">The <a class="inline-link" data-notion href="https://gabby-guppy-36a.notion.site/PORTFOLIO-Professional-Work-405cf3881a8681aab0b5eea245c49398" target="_blank" rel="noopener noreferrer">Notion engineering portfolio ↗</a> contains my current architecture documentation, planned case studies and implemented monitoring project. Verified implementation results will be added as the project progresses.</p>
     </section>
   </main>
   <footer class="site-footer page-wrap"><a class="footer-brand" href="index.html">CM<span>.</span></a><span>Built with curiosity, consistency, and a terminal.</span><span class="mono">© <span data-year></span> CHARLES MIBBS</span></footer>
